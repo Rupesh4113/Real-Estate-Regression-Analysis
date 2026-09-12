@@ -1,0 +1,5 @@
+Segment,Properties,Price Range,MAE ($10k),RMSE ($10k),Segment R²
+Budget,250,$26.5k - $50.2k,3.76,4.77,0.26
+Mid-Market,250,$50.2k - $59.2k,3.68,4.59,-1.884
+Premium,250,$59.3k - $69.6k,3.73,4.73,-1.682
+Luxury,250,$69.6k - $115.0k,4.07,5.06,0.748

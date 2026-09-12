@@ -1,0 +1,97 @@
+{
+  "evaluation_metrics": {
+    "ols": {
+      "mae": 3.811,
+      "mse": 22.935,
+      "rmse": 4.789,
+      "r2": 0.9002,
+      "optimal_alpha": null,
+      "cv_5fold_rmse_mean": 4.888,
+      "cv_5fold_rmse_std": 0.205,
+      "cv_5fold_r2_mean": 0.8972,
+      "loocv_rmse": 4.89,
+      "loocv_mae": 3.888,
+      "loocv_r2": 0.8974
+    },
+    "lasso": {
+      "mae": 3.811,
+      "mse": 22.929,
+      "rmse": 4.788,
+      "r2": 0.9002,
+      "optimal_alpha": 0.0036,
+      "cv_5fold_rmse_mean": 4.887,
+      "cv_5fold_rmse_std": 0.205,
+      "cv_5fold_r2_mean": 0.8973,
+      "loocv_rmse": 4.998,
+      "loocv_mae": 3.991,
+      "loocv_r2": 0.894
+    },
+    "ridge": {
+      "mae": 3.811,
+      "mse": 22.935,
+      "rmse": 4.789,
+      "r2": 0.9002,
+      "optimal_alpha": 0.9112,
+      "cv_5fold_rmse_mean": 4.888,
+      "cv_5fold_rmse_std": 0.205,
+      "cv_5fold_r2_mean": 0.8972,
+      "loocv_rmse": 4.89,
+      "loocv_mae": 3.888,
+      "loocv_r2": 0.8974
+    }
+  },
+  "residual_diagnostics": {
+    "mean_residual": 0.0351,
+    "std_residual": 4.789,
+    "skewness": 0.067,
+    "kurtosis": 0.052,
+    "jb_statistic": 0.86,
+    "jb_pvalue": 0.6514213470886148
+  },
+  "features_zeroed_by_lasso": [
+    "living_x_neighborhood"
+  ],
+  "vif_top": [
+    {
+      "Feature": "bathrooms",
+      "VIF": 7.07
+    },
+    {
+      "Feature": "bedrooms",
+      "VIF": 6.63
+    },
+    {
+      "Feature": "living_area_sqft",
+      "VIF": 5.54
+    },
+    {
+      "Feature": "neighborhood_quality",
+      "VIF": 5.0
+    },
+    {
+      "Feature": "accessibility_score",
+      "VIF": 4.2
+    },
+    {
+      "Feature": "distance_to_transit",
+      "VIF": 4.04
+    },
+    {
+      "Feature": "crime_index",
+      "VIF": 3.78
+    },
+    {
+      "Feature": "local_income",
+      "VIF": 3.19
+    },
+    {
+      "Feature": "lot_size",
+      "VIF": 2.9
+    },
+    {
+      "Feature": "parking_spaces",
+      "VIF": 1.51
+    }
+  ],
+  "best_model": "ridge"
+}
